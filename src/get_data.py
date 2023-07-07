@@ -4,7 +4,7 @@ import sys
 import pandas as pd
 import argparse
 from application_logging import logging
-from app_exception.app_exception import AppException
+from app_exception.app_exception import CustomException
 
 
 
@@ -20,7 +20,7 @@ def read_params(config_path):
         
     except Exception as e:
         logging.info(f"Exception Occurred while reading parameters from config_path -->{e}")
-        raise AppException(e,sys)
+        raise CustomException(e,sys)
 
 
 def get_data(config_path):
@@ -34,7 +34,7 @@ def get_data(config_path):
     except Exception as e:
         logging.info(
                 f"Exception Occurred while getting data from the source -->{e}")
-        raise AppException(e, sys)
+        raise CustomException(e, sys)
     
     
     

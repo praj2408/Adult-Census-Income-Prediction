@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/adult.csv
+      hash: md5
+      md5: 11cc9deab31f851601ac0807e5d10324
+      size: 3844210
+    - path: src/get_data.py
+      hash: md5
+      md5: e2cc946a5e4772f979a8f063d8541fb3
+      size: 1373
+    - path: src/load_data.py
+      hash: md5
+      md5: 6450a53f46a8ba3b1caa610c616ae187
+      size: 1007
+    outs:
+    - path: data/raw/adult.csv
+      hash: md5
+      md5: 11cc9deab31f851601ac0807e5d10324
+      size: 3844210
