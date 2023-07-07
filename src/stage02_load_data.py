@@ -3,7 +3,7 @@ import yaml
 import sys
 import pandas as pd
 import argparse
-from get_data import read_params, get_data
+from stage01_get_data import read_params, get_data
 from application_logging import logging
 from app_exception.app_exception import CustomException
 

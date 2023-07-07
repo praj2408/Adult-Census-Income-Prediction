@@ -10,7 +10,17 @@ data_source:
 load_data:
   raw_dataset: data/raw/adult.csv
 
+
+data:
+  processed: data/processed/Consignment_pricing_processed.csv
+
+final_data:
+  transformed_data: data/transformed_data/Consignment_pricing_transformed.csv
+
+
+
 split_data:
   train_path: data/processed/train_adult.csv
   test_path: data/processed/test_adult.csv
   test_size: 0.2
+

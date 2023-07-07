@@ -3,10 +3,18 @@
 stages:
   
   load_data:
-    cmd: python src/load_data.py --config=params.yaml
+    cmd: python src/stage02_load_data.py --config=params.yaml
     deps:
-    - src/get_data.py
-    - src/load_data.py
+    - src/stage01_get_data.py
+    - src/stage02_load_data.py
     - data_given/adult.csv
     outs:
     - data/raw/adult.csv
+
+  preprocessing:
+    cmd: python src/stage03_preprocessing.py --config=params.yaml
+    deps:
+      - src/stage03_preprocessing.py
+      - data/raw/adult.csv
+    outs:
+      - data/processed/adult_processed.csv
