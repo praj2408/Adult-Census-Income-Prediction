@@ -1,0 +1,7 @@
+base:
+  project: Adult-Census-Income-prediction
+  random_state: 42
+  target_col: expenses
+
+data_source:
+  s3_source: data_given/adult.csv

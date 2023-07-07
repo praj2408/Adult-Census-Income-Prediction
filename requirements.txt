@@ -2,3 +2,13 @@ PyYAML
 scikit-learn
 pandas
 numpy
+dvc
+
+
+
+
+
+
+
+
+-e .
