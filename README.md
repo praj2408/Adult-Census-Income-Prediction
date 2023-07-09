@@ -8,6 +8,7 @@ This is basically a binary classification problem where a person is classified i
 The dataset used for this project is the Adult Census Income dataset. It contains information about individuals, such as age, workclass, education, marital status, occupation, relationship, race, gender, capital gain, capital loss, hours per week, and native country. Each individual is labeled with their income level, classified as either >50K or <=50K.
 
 The dataset is provided in a CSV (Comma-Separated Values) format, with each row representing a separate individual and each column representing a specific attribute or feature.
+## Website
 
 ## Methodology
 Data Exploration: Initially, the dataset should be explored to understand its structure, check for missing values, and gain insights into the relationships between the features and the target variable.
