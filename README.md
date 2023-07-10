@@ -1,4 +1,4 @@
-# Adult-Census-Income-Prediction in Progress
+# Adult-Census-Income-Prediction
 
 ## Problem Statement:
 The Goal is to predict whether a person has an income of more than 50K a year or not.
