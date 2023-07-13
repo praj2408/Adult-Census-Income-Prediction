@@ -48,6 +48,7 @@ def preprocessing(config_path):
         df['country'].fillna(df.country.mode()[0], inplace=True)
         logging.info("'impute_missing' FUNCTION COMPLETED")
 
+        df.drop("fnlwgt", axis=1, inplace=True)
 
         data_path = config["preprocessing"]["processed"]
         
@@ -57,14 +58,6 @@ def preprocessing(config_path):
             
     except Exception as e:
         raise CustomException(e,sys)
-
-
-
-
-
-
-
-
 
 
 

@@ -29,10 +29,26 @@ stages:
       size: 3844210
     - path: src/stage03_preprocessing.py
       hash: md5
-      md5: f2bb8803b53691f6aa4c2e1d5bc50e94
-      size: 2366
+      md5: 3f6823fa2e93ae26eee5c4af05e4f0e9
+      size: 2399
     outs:
     - path: data/processed/adult_processed.csv
       hash: md5
-      md5: 2b3fec8d31a39d7cbe9469d231e7ae4b
-      size: 3590474
+      md5: 83b51e6699dd43b931363b126bada4a2
+      size: 3368360
+  feature_engineering:
+    cmd: python src/stage04_feature_engineering.py --config=params.yaml
+    deps:
+    - path: data/processed/adult_processed.csv
+      hash: md5
+      md5: 83b51e6699dd43b931363b126bada4a2
+      size: 3368360
+    - path: src/stage04_feature_engineering.py
+      hash: md5
+      md5: 0a875d7dd6af5a24bd0504f477d05621
+      size: 1704
+    outs:
+    - path: data/transformed/adult_transformed.csv
+      hash: md5
+      md5: 63076fa579ce5a67bd13bc2a8c4d48bd
+      size: 1093179

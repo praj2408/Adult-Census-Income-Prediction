@@ -18,3 +18,11 @@ stages:
       - data/raw/adult.csv
     outs:
       - data/processed/adult_processed.csv
+
+  feature_engineering:
+    cmd: python src/stage04_feature_engineering.py --config=params.yaml
+    deps:
+      - src/stage04_feature_engineering.py
+      - data/processed/adult_processed.csv
+    outs:
+      - data/transformed/adult_transformed.csv
