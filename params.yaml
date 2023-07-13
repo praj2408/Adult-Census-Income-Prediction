@@ -11,11 +11,11 @@ load_data:
   raw_dataset: data/raw/adult.csv
 
 
-data:
-  processed: data/processed/Consignment_pricing_processed.csv
+preprocessing:
+  processed: data/processed/adult_processed.csv
 
 final_data:
-  transformed_data: data/transformed_data/Consignment_pricing_transformed.csv
+  transformed_data: data/transformed_data/adult_transformed.csv
 
 
 
