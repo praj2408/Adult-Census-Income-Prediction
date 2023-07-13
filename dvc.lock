@@ -52,3 +52,23 @@ stages:
       hash: md5
       md5: 63076fa579ce5a67bd13bc2a8c4d48bd
       size: 1093179
+  split_data:
+    cmd: python src/stage05_split_data.py --config=params.yaml
+    deps:
+    - path: data/transformed/adult_transformed.csv
+      hash: md5
+      md5: 63076fa579ce5a67bd13bc2a8c4d48bd
+      size: 1093179
+    - path: src/stage05_split_data.py
+      hash: md5
+      md5: a1082a973cb7edefe2129208c6448f1d
+      size: 1669
+    outs:
+    - path: data/split_data/test_adult.csv
+      hash: md5
+      md5: dbd0ab156e3e608065675023e3b267ef
+      size: 219098
+    - path: data/split_data/train_adult.csv
+      hash: md5
+      md5: fed8ba42c18774e13633871181906033
+      size: 874224

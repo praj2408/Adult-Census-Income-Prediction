@@ -26,3 +26,13 @@ stages:
       - data/processed/adult_processed.csv
     outs:
       - data/transformed/adult_transformed.csv
+
+
+  split_data:
+    cmd: python src/stage05_split_data.py --config=params.yaml
+    deps:
+      - src/stage05_split_data.py
+      - data/transformed/adult_transformed.csv
+    outs:
+      - data/split_data/train_adult.csv
+      - data/split_data/test_adult.csv

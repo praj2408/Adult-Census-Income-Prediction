@@ -18,9 +18,8 @@ final_data:
   transformed_data: data/transformed/adult_transformed.csv
 
 
-
 split_data:
-  train_path: data/processed/train_adult.csv
-  test_path: data/processed/test_adult.csv
-  test_size: 0.2
+  train_path: data/split_data/train_adult.csv
+  test_path: data/split_data/test_adult.csv
+  split_ratio: 0.2
 
