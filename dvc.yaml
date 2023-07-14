@@ -36,3 +36,15 @@ stages:
     outs:
       - data/split_data/train_adult.csv
       - data/split_data/test_adult.csv
+
+
+  train_and_evaluate:
+    cmd: python src/stage06_train_and_evaluate.py --config=params.yaml
+    deps:
+      - src/stage06_train_and_evaluate.py
+      - data/split_data/train_adult.csv
+      - data/split_data/test_adult.csv
+    outs:
+      - data/split_data/train_adult.csv
+      - data/split_data/test_adult.csv
+    
