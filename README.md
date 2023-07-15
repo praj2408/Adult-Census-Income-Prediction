@@ -1,4 +1,4 @@
-# Adult-Census-Income-Prediction in Progress
+# Adult-Census-Income-Prediction
 
 ## Problem Statement:
 The Goal is to predict whether a person has an income of more than 50K a year or not.
@@ -38,7 +38,7 @@ The following diagram shows the implementation of the ML pipeline using CI/CD, w
 ![](https://github.com/praj2408/ETE-Protect/blob/main/images/cicd%20pipeline%20automation.jpg)
 
 ## Results and analysis
-After training the model, we achieved accuracy value of 0.82 (82% accuracy) on the test data, indicating a high level of predictive power.
+After training the model, we achieved accuracy value of 0.86.69 (87% accuracy) on the test data, indicating a high level of predictive power.
 
 ## Installation
 To run the code, first clone this repository and navigate to the project directory:
