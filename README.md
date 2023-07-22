@@ -5,6 +5,7 @@ The Goal is to predict whether a person has an income of more than 50K a year or
 This is basically a binary classification problem where a person is classified into the >50K group or <=50K group.
 
 ## Dataset
+[Adult Census Income Dateset](https://www.kaggle.com/datasets/wenruliu/adult-income-dataset)<br>
 The dataset used for this project is the Adult Census Income dataset. It contains information about individuals, such as age, workclass, education, marital status, occupation, relationship, race, gender, capital gain, capital loss, hours per week, and native country. Each individual is labeled with their income level, classified as either >50K or <=50K.
 
 The dataset is provided in a CSV (Comma-Separated Values) format, with each row representing a separate individual and each column representing a specific attribute or feature.
